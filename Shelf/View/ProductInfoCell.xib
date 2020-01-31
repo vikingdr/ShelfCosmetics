@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="819" id="KGk-i7-Jjw" customClass="ProductInfoCell" customModule="Shelf" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="819"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="818"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jf-K2-6Tu">
+                        <rect key="frame" x="28" y="31" width="320" height="334"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rSb-Xf-bhy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="334"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rSb-Xf-bhy" firstAttribute="top" secondItem="6jf-K2-6Tu" secondAttribute="top" id="7Ul-ki-UC6"/>
+                            <constraint firstAttribute="bottom" secondItem="rSb-Xf-bhy" secondAttribute="bottom" id="M9h-6b-JQM"/>
+                            <constraint firstAttribute="height" constant="334" id="RWz-8E-5wj"/>
+                            <constraint firstItem="rSb-Xf-bhy" firstAttribute="leading" secondItem="6jf-K2-6Tu" secondAttribute="leading" id="Xas-QE-B9t"/>
+                            <constraint firstAttribute="trailing" secondItem="rSb-Xf-bhy" secondAttribute="trailing" id="du5-71-6dw"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuM-kO-4aF" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="67" y="395" width="243" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="250" constant="22" id="8qV-jc-mpM"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content=" ">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="16" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.64000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtw-AW-tU1" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="123" y="440" width="128" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="39" id="2Bb-Gr-gHu"/>
+                            <constraint firstAttribute="width" constant="128" id="LIt-7W-spH"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Price: $">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="12" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="1.1000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nta-VX-Q8Q">
+                        <rect key="frame" x="28" y="498" width="320" height="35"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxr-uL-XXf">
+                                <rect key="frame" x="101" y="0.0" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="3g5-56-CCE"/>
+                                    <constraint firstAttribute="height" constant="35" id="aO5-Ic-Phz"/>
+                                </constraints>
+                                <state key="normal" image="Minus"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coatsOval" translatesAutoresizingMaskIntoConstraints="NO" id="6G9-0k-MAJ">
+                                <rect key="frame" x="142" y="0.0" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="d58-oi-oR8"/>
+                                    <constraint firstAttribute="height" constant="35" id="uer-gh-gTH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhI-vi-tUj" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                                <rect key="frame" x="146" y="7" width="28" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="fA5-rn-lGL"/>
+                                    <constraint firstAttribute="width" constant="28" id="zWQ-lU-JrA"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="1">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Avenir-Black"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                        <real key="value" value="3.6299999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaR-bc-175">
+                                <rect key="frame" x="185" y="0.0" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="b85-wc-lDM"/>
+                                    <constraint firstAttribute="width" constant="35" id="lBL-DR-eDr"/>
+                                </constraints>
+                                <state key="normal" image="plus"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="1EL-84-Ki5"/>
+                            <constraint firstItem="uhI-vi-tUj" firstAttribute="centerY" secondItem="6G9-0k-MAJ" secondAttribute="centerY" id="7qF-tg-Frm"/>
+                            <constraint firstItem="IaR-bc-175" firstAttribute="leading" secondItem="6G9-0k-MAJ" secondAttribute="trailing" constant="8" id="Gqk-wC-HbD"/>
+                            <constraint firstItem="zxr-uL-XXf" firstAttribute="centerY" secondItem="6G9-0k-MAJ" secondAttribute="centerY" id="Ofx-ld-Adr"/>
+                            <constraint firstItem="6G9-0k-MAJ" firstAttribute="top" secondItem="Nta-VX-Q8Q" secondAttribute="top" id="ajC-qL-6ts"/>
+                            <constraint firstItem="uhI-vi-tUj" firstAttribute="centerX" secondItem="6G9-0k-MAJ" secondAttribute="centerX" id="gD4-2B-tpz"/>
+                            <constraint firstItem="6G9-0k-MAJ" firstAttribute="leading" secondItem="zxr-uL-XXf" secondAttribute="trailing" constant="6" id="lBn-Cv-Re2"/>
+                            <constraint firstItem="IaR-bc-175" firstAttribute="centerY" secondItem="6G9-0k-MAJ" secondAttribute="centerY" id="pEK-uk-qTR"/>
+                            <constraint firstItem="6G9-0k-MAJ" firstAttribute="centerX" secondItem="Nta-VX-Q8Q" secondAttribute="centerX" id="uwv-7C-Y1c"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZD-6A-2dE" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="28" y="551" width="320" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="ysy-Kw-KVk"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Type: ">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.71372549019607845" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.57999999999999996"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FE1-t0-c9E">
+                        <rect key="frame" x="76" y="591" width="223" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="0.14619679831288343" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="8JQ-qx-M0K"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgJ-Nd-mHM" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="74" y="602" width="228" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="wjs-bD-kVi"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Vendor: ">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.71372549019607845" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.56000000000000005"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sU4-Ng-qbq">
+                        <rect key="frame" x="76" y="637" width="223" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="0.14619679830000001" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="qJJ-0j-sDz"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ic-4i-ie3" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="76" y="657" width="223" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="O0F-63-qPQ"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Product Description:">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.71372549019607845" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCN-ga-Mot" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="77" y="684" width="223" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="250" constant="19" id="R4e-Pe-WJj"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content=" ">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="13" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.58999999999999997"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                <real key="value" value="19"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tQ6-yc-gKw">
+                        <rect key="frame" x="76" y="726" width="223" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="0.14619679830000001" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="5NX-pf-ymk"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="OtR-kS-rYy"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OtR-kS-rYy"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kV-aQ-W66" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="75" y="750" width="225" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="225" id="19f-yy-BEr"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="18" id="mgH-6e-Shk"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Product ID: ">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.71372549019607845" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.58999999999999997"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3gb-Or-lhS">
+                        <rect key="frame" x="28" y="354" width="320" height="465"/>
+                        <color key="backgroundColor" white="1" alpha="0.051967503834355826" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="2kV-aQ-W66" firstAttribute="top" secondItem="tQ6-yc-gKw" secondAttribute="bottom" constant="23" id="2KU-yM-Uzn"/>
+                    <constraint firstItem="bZD-6A-2dE" firstAttribute="top" secondItem="Nta-VX-Q8Q" secondAttribute="bottom" constant="18" id="3Y5-gb-BET"/>
+                    <constraint firstAttribute="trailing" secondItem="FE1-t0-c9E" secondAttribute="trailing" constant="76" id="6IG-Lj-4Hg"/>
+                    <constraint firstItem="6jf-K2-6Tu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="31" id="6hE-cP-p7e"/>
+                    <constraint firstItem="nCN-ga-Mot" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="69" id="74w-Io-0vb"/>
+                    <constraint firstItem="TgJ-Nd-mHM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="74" id="9Y7-h4-zWY"/>
+                    <constraint firstItem="6jf-K2-6Tu" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="CGc-fY-RHp"/>
+                    <constraint firstAttribute="bottom" secondItem="3gb-Or-lhS" secondAttribute="bottom" id="CkW-HO-lt6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="tQ6-yc-gKw" secondAttribute="trailing" constant="68" id="Dm1-aq-ngr"/>
+                    <constraint firstItem="3gb-Or-lhS" firstAttribute="top" secondItem="6jf-K2-6Tu" secondAttribute="bottom" constant="-11" id="Eeg-3s-RQP"/>
+                    <constraint firstAttribute="trailing" secondItem="Nta-VX-Q8Q" secondAttribute="trailing" constant="27" id="Fr6-6P-gnE"/>
+                    <constraint firstAttribute="trailing" secondItem="sU4-Ng-qbq" secondAttribute="trailing" constant="76" id="Hzg-Oi-J6G"/>
+                    <constraint firstItem="bZD-6A-2dE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="LpP-DD-IrV"/>
+                    <constraint firstAttribute="trailing" secondItem="NuM-kO-4aF" secondAttribute="trailing" constant="65" id="LtX-ql-7Tb"/>
+                    <constraint firstItem="sU4-Ng-qbq" firstAttribute="top" secondItem="TgJ-Nd-mHM" secondAttribute="bottom" constant="16" id="Or5-Qk-eH5"/>
+                    <constraint firstItem="3gb-Or-lhS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="QSw-lB-uQs"/>
+                    <constraint firstItem="TgJ-Nd-mHM" firstAttribute="top" secondItem="FE1-t0-c9E" secondAttribute="bottom" constant="10" id="SdD-9A-RFI"/>
+                    <constraint firstItem="tQ6-yc-gKw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="68" id="TaU-yT-Jk2"/>
+                    <constraint firstItem="Qtw-AW-tU1" firstAttribute="top" secondItem="NuM-kO-4aF" secondAttribute="bottom" constant="23" id="Td6-N0-qbL"/>
+                    <constraint firstItem="tQ6-yc-gKw" firstAttribute="top" secondItem="nCN-ga-Mot" secondAttribute="bottom" constant="23" id="Tly-jI-9se"/>
+                    <constraint firstAttribute="trailing" secondItem="TgJ-Nd-mHM" secondAttribute="trailing" constant="73" id="VLU-Ng-Ecd"/>
+                    <constraint firstItem="6jf-K2-6Tu" firstAttribute="width" secondItem="3gb-Or-lhS" secondAttribute="width" id="Ww8-m3-L8F"/>
+                    <constraint firstAttribute="trailing" secondItem="bZD-6A-2dE" secondAttribute="trailing" constant="27" id="Xxc-uy-qJ9"/>
+                    <constraint firstItem="4Ic-4i-ie3" firstAttribute="top" secondItem="sU4-Ng-qbq" secondAttribute="bottom" constant="19" id="YfN-JU-KP3"/>
+                    <constraint firstItem="NuM-kO-4aF" firstAttribute="top" secondItem="6jf-K2-6Tu" secondAttribute="bottom" constant="30" id="d19-kk-LZy"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nCN-ga-Mot" secondAttribute="trailing" constant="67" id="dcQ-G5-OS8"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4Ic-4i-ie3" secondAttribute="trailing" constant="68" id="e3Z-R6-Zlp"/>
+                    <constraint firstItem="nCN-ga-Mot" firstAttribute="top" secondItem="4Ic-4i-ie3" secondAttribute="bottom" constant="8" id="f3x-H4-kZz"/>
+                    <constraint firstItem="FE1-t0-c9E" firstAttribute="top" secondItem="bZD-6A-2dE" secondAttribute="bottom" constant="21" id="fRk-Xu-Mjx"/>
+                    <constraint firstItem="4Ic-4i-ie3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="68" id="fVg-WJ-OID"/>
+                    <constraint firstItem="Nta-VX-Q8Q" firstAttribute="top" secondItem="Qtw-AW-tU1" secondAttribute="bottom" constant="19" id="g1x-Xh-2bL"/>
+                    <constraint firstItem="FE1-t0-c9E" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="76" id="jau-jO-CCk"/>
+                    <constraint firstItem="Nta-VX-Q8Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="pjU-dn-9mJ"/>
+                    <constraint firstItem="2kV-aQ-W66" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="qtF-ZZ-UXe"/>
+                    <constraint firstItem="Qtw-AW-tU1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="vUZ-3W-gNN"/>
+                    <constraint firstItem="sU4-Ng-qbq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="76" id="x5X-wW-X6U"/>
+                    <constraint firstItem="NuM-kO-4aF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="67" id="xFK-ZJ-7O5"/>
+                    <constraint firstAttribute="bottom" secondItem="2kV-aQ-W66" secondAttribute="bottom" constant="31" id="yog-QG-UQ4"/>
+                    <constraint firstAttribute="trailing" secondItem="3gb-Or-lhS" secondAttribute="trailing" constant="27" id="zQP-tb-uxg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="minusButton" destination="zxr-uL-XXf" id="7co-da-63e"/>
+                <outlet property="plusButton" destination="IaR-bc-175" id="K2u-Jd-zct"/>
+                <outlet property="productCountLabel" destination="uhI-vi-tUj" id="Fcg-ks-03g"/>
+                <outlet property="productDescriptionLabel" destination="nCN-ga-Mot" id="kGh-ju-6Ih"/>
+                <outlet property="productIdLabel" destination="2kV-aQ-W66" id="850-Yk-idc"/>
+                <outlet property="productImageBackView" destination="6jf-K2-6Tu" id="4Jw-dv-Rgj"/>
+                <outlet property="productImageView" destination="rSb-Xf-bhy" id="zFV-Ye-wm6"/>
+                <outlet property="productPriceLabel" destination="Qtw-AW-tU1" id="WHN-ar-nWo"/>
+                <outlet property="productTitleLabel" destination="NuM-kO-4aF" id="EqE-Oj-a6n"/>
+                <outlet property="productTypeLabel" destination="bZD-6A-2dE" id="biz-Rd-PrX"/>
+                <outlet property="productVendorLabel" destination="TgJ-Nd-mHM" id="WYK-ab-Xrm"/>
+                <outlet property="whiteBackgroundOverlayView" destination="3gb-Or-lhS" id="1fi-lO-AOe"/>
+            </connections>
+            <point key="canvasLocation" x="280.5" y="113.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Minus" width="16" height="2"/>
+        <image name="coatsOval" width="40" height="40"/>
+        <image name="plus" width="16" height="16"/>
+    </resources>
+</document>

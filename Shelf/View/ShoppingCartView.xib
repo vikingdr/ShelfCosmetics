@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShoppingCartView" customModule="Shelf" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="34" height="27"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShoppingCartIcon" translatesAutoresizingMaskIntoConstraints="NO" id="OQU-Ue-dAD">
+                    <rect key="frame" x="0.0" y="5" width="27" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="Dka-da-PyP"/>
+                        <constraint firstAttribute="width" constant="27" id="X8y-Wp-4GL"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RedOval" translatesAutoresizingMaskIntoConstraints="NO" id="0mu-gA-j60">
+                    <rect key="frame" x="17" y="0.0" width="17" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="17" id="LA3-sU-hRH"/>
+                        <constraint firstAttribute="height" constant="17" id="Mha-gA-Pvo"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1T-UQ-rrk">
+                    <rect key="frame" x="21" y="2" width="10" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="gvn-EZ-Lco"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0mu-gA-j60" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3Of-TP-wPR"/>
+                <constraint firstAttribute="trailing" secondItem="0mu-gA-j60" secondAttribute="trailing" id="DUo-uU-pDi"/>
+                <constraint firstItem="OQU-Ue-dAD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JKa-iI-Q37"/>
+                <constraint firstAttribute="bottom" secondItem="OQU-Ue-dAD" secondAttribute="bottom" id="ULz-J2-RqX"/>
+                <constraint firstItem="h1T-UQ-rrk" firstAttribute="centerX" secondItem="0mu-gA-j60" secondAttribute="centerX" id="cs6-1N-M1Q"/>
+                <constraint firstItem="h1T-UQ-rrk" firstAttribute="centerY" secondItem="0mu-gA-j60" secondAttribute="centerY" id="m1q-N0-97H"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="countOfItems" destination="h1T-UQ-rrk" id="pLG-cV-A72"/>
+            </connections>
+            <point key="canvasLocation" x="485" y="368.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="RedOval" width="17" height="17"/>
+        <image name="ShoppingCartIcon" width="27" height="22"/>
+    </resources>
+</document>

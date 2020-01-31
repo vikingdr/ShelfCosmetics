@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  Shelf
+
+  Created by Nathan Konrad on 11/8/16.
+  Copyright © 2016 Shelf. All rights reserved.
+*/
+
+
+"3FreeNailPolish" = "3-Free Nail Polish does not contain:";
+"3FreeNailPolishContent" = "Dibutyl Phthalate (DBP), Formaldehyde, and Toluene";
+
+"4FreeNailPolish" = "4-Free Nail Polish does not contain:";
+"4FreeNailPolishContent" = "Dibutyl Phthalate (DBP), Formaldehyde, Toluene and Camphor";
+
+"5FreeNailPolish" = "5-Free Nail Polish does not contain:";
+"5FreeNailPolishContent" = "Dibutyl Phthalate (DBP), Formaldehyde, Toluene, Camphor and Formaldehyde Resin";
+
+"6FreeNailPolish" = "6-Free Nail Polish does not contain:";
+"6FreeNailPolishContent" = "Dibutyl Phthalate (DBP), Formaldehyde, Toluene, Camphor, Formaldehyde Resin and Parabens";
+
+"7FreeNailPolish" = "7-Free Nail Polish does not contain:";
+"7FreeNailPolishContent" = "Dibutyl Phthalate (DBP), Formaldehyde, Toluene, Camphor, Formaldehyde Resin, Parabens and Ethyl Tosylamide Xylene";
+
+"8FreeNailPolish" = "8-Free Nail Polish does not contain:";
+"8FreeNailPolishContent" = "Dibutyl Phthalate (DBP), Formaldehyde, Toluene, Camphor, Formaldehyde Resin, Parabens, Ethyl Tosylamide Xylene";
+
+
+
+"7ChemicalTitle" = "Dibutyl Phthalate (DBP):";
+"7ChemicalContent" = "A common plasticizer that makes nail polish more flexible and last longer. DBP is added to nail polish to make it more flexible and less prone to cracks, chips, and other annoyances. It has also been linked to reproductive issues and is banned in Europe.";
+
+"8ChemicalTitle" = "Formaldehyde:";
+"8ChemicalContent" = "Formaldehyde is in plywood and particleboard, and is often used as a preservative, sterilizer, and embalmer. This chemical is added to nail polishes that are also considered nail hardeners.” Formaldehyde is considered a carcinogen by the International Agency for Research on Cancer and is linked to both nasal and lung cancer.";
+
+"9ChemicalTitle" = "Toluene:";
+"9ChemicalContent" = "A solvent used to make nail polish smooth and even. It is derived from petroleum. Toluene helps keep polish smooth and even when applied. Toluene is linked to issues affecting the nervous system with symptoms that include dizziness, headaches, nausea, and eye irritation. It has also been linked to birth defects and developmental problems in children whose mothers were exposed to the chemical during pregnancy. The European Union has banned this chemical.";
+
+"10ChemicalTitle" = "Camphor:";
+"10ChemicalContent" = "A type of plasticizer that keeps nail polish flexible and reduces the likelihood it will chip. It is a scented substance derived from camphor tree that can cause nausea, dizziness, and headaches when inhaled, in large quantities, putting nail technicians at risk. It is highly flammable.";
+
+"11ChemicalTitle" = "Formaldehyde Resin:";
+"11ChemicalContent" = "A synthetic resin used as a plasticizer. It helps ensure the nail polish adheres to the nail, adds gloss, hardness, durability and depth. It is a skin allergen known to cause dermatitis. It can also contain residual amounts of formaldehyde.";
+
+"12ChemicalTitle" = "Parabens:";
+"12ChemicalContent" = "Preservatives that are commonly used in cosmetic and pharmaceutical products to prevent the growth of harmful bacteria and mold.";
+
+"13ChemicalTitle" = "Ethyl Tosylamide:";
+"13ChemicalContent" = "An amber liquid used as a plasticizer that helps nail polish stick and makes it look glossy. It allows for flexibility and durability with nail polish.";
+
+"14ChemicalTitle" = "Xylene:";
+"14ChemicalContent" = "Produced from coal tar or crude oil, and is used as a paint thinner in nail polish. Xylene is a central nervous system depressant. High levels can cause skin, eye, nose and throat irritation.";
+
+"16SourceTitle" = "U.S. Food & Drug Administration";
+"16SourceLink" = "(fda.gov)";
+
+"17SourceTitle" = "Black Cat Nails";
+"17SourceLink" = "(blackcatnails.com)";
+
+"18SourceTitle" = "DermaDoctor";
+"18SourceLink" = "(dermadoctor.com)";
+
+"19SourceTitle" = "Skin Deep Cosmetics Database";
+"19SourceLink" = "(ewg.org)";
+
+"20SourceTitle" = "The WIFE Guide: Non-Toxic Nail Polish";
+"20SourceLink" = "(taryncoxthewife.com)";
+
+"21SourceTitle" = "Campaign For Safe Cosmetics";
+"21SourceLink" = "(safecosmetics.org)";
+
+"0FAQTitle" = "1. How do I use SHELF?";
+"0FAQContent" = "It’s simple! To add a \"SHELFIE\", press the center button with a nail polish bottle, pose, and snap. Then choose the brand and color, rate it, share the number of coats used, as well as your location, and give it a description with hashtags like #favoriteshade.";
+
+"1FAQTitle" = "2. Can I upload products that are not currently listed?";
+"1FAQContent" = "No, at this time, only brands that we have listed are able to be uploaded via picture.";
+
+
+"2FAQTitle" = "3. How do I request that a brand be put on the app?";
+"2FAQContent" = "Return to the previous screen and email us about your suggestion. We will do our best to accomodate you!";
+
+"3FAQTitle" = "4. How do I find friends?";
+"3FAQContent" = "Go to the magnify glass, the second icon to the left, and you can search for your friends’ names or you can go to trending, and find pictures that interest you and follow those accounts.";
+
+"4FAQTitle" = "5. When will SHELF be on Android?";
+"4FAQContent" = "SHELF will be on Android in fall 2017.";
+
+"5FAQTitle" = "6. When will you also include other products besides nail polish?";
+"5FAQContent" = "We are working hard to include other products in addition to nail polish by the beginning of 2017.";
+
+"6FAQTitle" = "7. How do I delete a SHELFIE that I’ve created?";
+"6FAQContent" = "To delete a SHELFIE you’ve created, return to the settings screen, tap delete colors, and then choose the specific SHELFIE you want to delete.";
+
+"7FAQTitle" = "8. Does SHELF ship internationally?";
+"7FAQContent" = "No, at this time SHELF Cosmetics does not ship internationally.";
+
+"8FAQTitle" = "9. How can I see my order history?";
+"8FAQContent" = "Return to the settings screen and tap order history. Once in order history, users will be able to find their previous and current orders.";
+
+"9FAQTitle" = "10. There is a problem with my order. What do I do?";
+"9FAQContent" = "Return to the previous screen and email us. All previous orders will be listed in Order History, accessible via the Settings screen.";
+
+"10FAQTitle" = "11. I am having a problem with my Credit Card information when checking out.";
+"10FAQContent" = "If you have received an error message in regards to your credit card, please ensure that your billing address and zip code are correct and match the card you are trying to use.";
+
+"11FAQTitle" = "12. How did you come up with the name SHELF?";
+"11FAQContent" = "The name SHELF Cosmetics came from the question, “So what’s on your SHELF?” both literally and figuratively -- it was a way for women to associate their makeup SHELF with that of a digital SHELF.";
+

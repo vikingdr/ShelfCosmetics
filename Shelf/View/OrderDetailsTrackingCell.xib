@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="219" id="KGk-i7-Jjw" customClass="OrderDetailsTrackingCell" customModule="Shelf" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="219"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="218.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trackingInfoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cHn-Of-o48">
+                        <rect key="frame" x="128" y="39" width="65" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65" id="FYe-XB-lps"/>
+                            <constraint firstAttribute="height" constant="49" id="MGw-sZ-i3f"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.64000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For tracking information, please view the email sent out with your order. Thank you very much!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIg-eS-D83" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="33" y="106" width="255" height="66"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="255" id="4tI-2j-KC3"/>
+                            <constraint firstAttribute="height" constant="66" id="Ewe-gF-E7B"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                <real key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.42999999999999999"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cHn-Of-o48" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="0cR-tv-wqG"/>
+                    <constraint firstItem="cHn-Of-o48" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="39" id="CdB-Qi-b2G"/>
+                    <constraint firstItem="fIg-eS-D83" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Ixo-rx-e0m"/>
+                    <constraint firstItem="fIg-eS-D83" firstAttribute="top" secondItem="cHn-Of-o48" secondAttribute="bottom" constant="18" id="gWd-Rk-jPh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="215" y="516.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="trackingInfoIcon" width="65" height="50"/>
+    </resources>
+</document>

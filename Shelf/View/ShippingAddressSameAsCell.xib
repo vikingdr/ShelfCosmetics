@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ShippingAddressSameAsCell" customModule="Shelf" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="107"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXS-GH-z0j" customClass="ShelfButton" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="33" y="59" width="138" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="OoA-TS-zRO"/>
+                            <constraint firstAttribute="width" constant="138" id="v0R-ca-ZCI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="9"/>
+                        <state key="normal" title="ENTER NEW ADDRESS" backgroundImage="EnterNewAddress">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.50414589723926384" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1mI-EC-MKd">
+                        <rect key="frame" x="311" y="26" width="51" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="2rn-GI-2Vs"/>
+                            <constraint firstAttribute="width" constant="49" id="Ir4-ac-bt7"/>
+                        </constraints>
+                        <color key="onTintColor" red="0.32156862745098036" green="0.32549019607843138" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                    </switch>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJR-Wr-evb">
+                        <rect key="frame" x="29" y="106" width="320" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="0.1518524732" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="Go0-Ln-IB7"/>
+                            <constraint firstAttribute="height" constant="1" id="pAs-oW-Fkg"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHIPPING ADDRESS SAME AS BILLING" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQr-P4-pYP" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="33" y="21" width="257" height="42"/>
+                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="1.1000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="yXS-GH-z0j" firstAttribute="top" secondItem="IQr-P4-pYP" secondAttribute="bottom" constant="-4" id="2kS-6p-MEU"/>
+                    <constraint firstItem="1mI-EC-MKd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="26" id="B7p-4e-arn"/>
+                    <constraint firstItem="1mI-EC-MKd" firstAttribute="leading" secondItem="IQr-P4-pYP" secondAttribute="trailing" constant="21" id="Gyh-5O-iev"/>
+                    <constraint firstItem="IQr-P4-pYP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" priority="750" constant="21" id="H2d-TH-voB"/>
+                    <constraint firstItem="IQr-P4-pYP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="33" id="K4Q-B6-GQ2"/>
+                    <constraint firstItem="yXS-GH-z0j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="33" id="Uxe-A0-hwA"/>
+                    <constraint firstItem="EJR-Wr-evb" firstAttribute="top" secondItem="yXS-GH-z0j" secondAttribute="bottom" constant="22" id="g8U-7N-o7t"/>
+                    <constraint firstAttribute="trailing" secondItem="1mI-EC-MKd" secondAttribute="trailing" constant="15" id="g9p-Gb-5XG"/>
+                    <constraint firstAttribute="bottom" secondItem="EJR-Wr-evb" secondAttribute="bottom" id="mSY-cA-eyp"/>
+                    <constraint firstItem="EJR-Wr-evb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="29" id="toy-WN-eeZ"/>
+                    <constraint firstAttribute="trailing" secondItem="EJR-Wr-evb" secondAttribute="trailing" constant="26" id="xkI-4q-7fc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="enterNewAddressButton" destination="yXS-GH-z0j" id="68h-FH-r83"/>
+                <outlet property="shippingSameAsBillingToggle" destination="1mI-EC-MKd" id="GoL-ls-6NL"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="EnterNewAddress" width="140" height="27"/>
+    </resources>
+</document>

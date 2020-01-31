@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="806" id="KGk-i7-Jjw" customClass="OrderDetailsInfoCell" customModule="Shelf" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="806"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="806"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HU1-7E-jxX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="806"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNo-dc-LRN" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="96" y="14" width="129" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="129" id="YCL-ca-ejW"/>
+                            <constraint firstAttribute="height" constant="22" id="n62-EM-X7v"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Order Number:">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.71372549019607845" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.42999999999999999"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fv-lA-nFb" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="96" y="36" width="129" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="TBf-b7-rkn"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="129" id="aXV-Wa-Nmi"/>
+                            <constraint firstAttribute="width" constant="129" id="bUQ-XG-0Gd"/>
+                            <constraint firstAttribute="height" constant="22" id="hqw-rD-4Fg"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="#12938291">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="18" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.68999999999999995"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="TBf-b7-rkn"/>
+                                <exclude reference="aXV-Wa-Nmi"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alo-Iz-lfx" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="96" y="77" width="129" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="fCq-75-ZDi"/>
+                            <constraint firstAttribute="width" constant="129" id="lzW-wX-uON"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Order Date:">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.71372549019607845" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.42999999999999999"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wP-uv-hJC" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="96" y="99" width="129" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="Tcz-CV-lsr"/>
+                            <constraint firstAttribute="width" constant="129" id="Xhm-a7-OjQ"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="129" id="bBy-Dl-kge"/>
+                            <constraint firstAttribute="height" constant="22" id="sxh-d7-pkO"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="--">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="18" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.68999999999999995"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Tcz-CV-lsr"/>
+                                <exclude reference="bBy-Dl-kge"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7e-Yf-5ZA" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="35" y="163" width="157" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="3tm-4j-TwC"/>
+                            <constraint firstAttribute="width" constant="157" id="6fw-GP-ZFF"/>
+                            <constraint firstAttribute="height" constant="22" id="L3y-LA-5UD"/>
+                            <constraint firstAttribute="width" constant="129" id="Np8-uY-VMW"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Subtotal: ">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13.5" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.56000000000000005"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="L3y-LA-5UD"/>
+                                <exclude reference="Np8-uY-VMW"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lk9-gc-zOE" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="192" y="165" width="94" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="0in-bo-Vjn"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="$0.00">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="1.1100000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="KdN-HC-Pf2">
+                        <rect key="frame" x="0.0" y="194" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="njp-Xx-ehB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRJ-4l-MTu" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="35" y="206" width="157" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="157" id="CIP-Ua-bGw"/>
+                            <constraint firstAttribute="height" constant="22" id="LpT-ld-Ym5"/>
+                            <constraint firstAttribute="width" constant="129" id="N8v-th-FM8"/>
+                            <constraint firstAttribute="height" constant="19" id="VUC-fT-CUP"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Shipping &amp; Handling:">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13.5" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.56000000000000005"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LpT-ld-Ym5"/>
+                                <exclude reference="N8v-th-FM8"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqy-MD-1BK" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="192" y="208" width="94" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="kXM-5W-D4k"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="$0.00">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="1.1100000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="iqZ-YV-uGf">
+                        <rect key="frame" x="0.0" y="237" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="h1S-XS-YOl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTy-Ov-ves" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="35" y="249" width="157" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="0tg-gl-4bj"/>
+                            <constraint firstAttribute="width" constant="157" id="O0e-e2-cIh"/>
+                            <constraint firstAttribute="width" constant="129" id="sVB-cl-XQR"/>
+                            <constraint firstAttribute="height" constant="19" id="uDd-23-hZA"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Tax:">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13.5" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.56000000000000005"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0tg-gl-4bj"/>
+                                <exclude reference="sVB-cl-XQR"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvi-YW-nS5" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="192" y="251" width="94" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="b9l-Dr-ara"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="$0.00">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="1.1100000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="IdO-hI-09i">
+                        <rect key="frame" x="0.0" y="280" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="DoV-RB-lQd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPI-GR-fI0" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="35" y="292" width="157" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="5tT-4Q-1q3"/>
+                            <constraint firstAttribute="width" constant="129" id="80F-fu-lA2"/>
+                            <constraint firstAttribute="height" constant="19" id="RQV-qJ-ySQ"/>
+                            <constraint firstAttribute="width" constant="157" id="RxF-oy-uNQ"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="ORDER TOTAL:">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="1.3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5tT-4Q-1q3"/>
+                                <exclude reference="80F-fu-lA2"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcv-CR-fdR" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="192" y="292" width="94" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="129" id="8al-gs-arf"/>
+                            <constraint firstAttribute="height" constant="22" id="UvZ-mO-sMZ"/>
+                            <constraint firstAttribute="height" constant="19" id="b1P-Dj-7UR"/>
+                            <constraint firstAttribute="width" constant="157" id="snR-AV-QT6"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="$0.00">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="1.3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8al-gs-arf"/>
+                                <exclude reference="UvZ-mO-sMZ"/>
+                                <exclude reference="snR-AV-QT6"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlQ-vW-1Db" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="85" y="361" width="150" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="9tg-Ck-vnx"/>
+                            <constraint firstAttribute="height" constant="16" id="aQ4-U5-mae"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="SHIP TO:">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.71372549019607845" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="1.1100000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIf-L5-G6P" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="28" y="381" width="265" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="Ay4-q9-rmL"/>
+                            <constraint firstAttribute="width" constant="204" id="geZ-n4-RC4"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="--">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.54000000000000004"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="geZ-n4-RC4"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="R6F-p3-Xjx">
+                        <rect key="frame" x="0.0" y="436" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Axm-0w-41y"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7w-lE-DPv" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="85" y="464" width="150" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="Rec-69-Iq5"/>
+                            <constraint firstAttribute="height" constant="16" id="uhA-8I-Zdk"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="SHIPPING METHOD:">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.71372549019607845" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="1.1100000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uu-fO-b6X" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="58" y="484" width="204" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="204" id="4CY-0e-fUj"/>
+                            <constraint firstAttribute="height" constant="18" id="BbU-u1-bk1"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="--">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.54000000000000004"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="HDX-NP-g4M">
+                        <rect key="frame" x="0.0" y="528" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="DbV-KM-Z21"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwt-dN-QTF" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="85" y="555" width="150" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="Jm6-ii-lMg"/>
+                            <constraint firstAttribute="height" constant="16" id="o4c-qs-zAb"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="PAYMENT:">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.71372549019607845" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="1.1100000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bv1-7V-0mI" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="58" y="577" width="204" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="204" id="6Rm-fp-gBt"/>
+                            <constraint firstAttribute="height" constant="18" id="TJo-fa-oyb"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="--">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.54000000000000004"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="xJg-5F-Hgi">
+                        <rect key="frame" x="0.0" y="619" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="W8G-2I-zuv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlG-bN-jgU" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="85" y="648" width="150" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="ViI-H9-raN"/>
+                            <constraint firstAttribute="width" constant="150" id="i81-Qv-u8x"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="PROMO:">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.71372549019607845" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="1.1100000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.31" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5m-IY-LYG" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="58" y="666" width="204" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="204" id="5Jc-K1-gjn"/>
+                            <constraint firstAttribute="height" constant="18" id="n9c-jm-5im"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="No promo code entered">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.54000000000000004"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="kPe-Gm-cPK">
+                        <rect key="frame" x="0.0" y="711" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="gwR-IQ-uzn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHA-Pc-TfK" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="85" y="740" width="150" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="a6B-6L-T2I"/>
+                            <constraint firstAttribute="height" constant="16" id="gbW-SQ-kpq"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="DISTRIBUTOR:">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.71372549019607845" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="1.1100000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsb-LT-Yf6" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="58" y="759" width="204" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="K8B-pf-Iv5"/>
+                            <constraint firstAttribute="width" constant="204" id="l56-qp-R9X"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Salon Supply Store">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.54000000000000004"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Bv1-7V-0mI" firstAttribute="top" secondItem="pwt-dN-QTF" secondAttribute="bottom" constant="6" id="0AO-eC-PzD"/>
+                    <constraint firstAttribute="trailing" secondItem="TIf-L5-G6P" secondAttribute="trailing" constant="27" id="0ye-Ie-Fne"/>
+                    <constraint firstItem="xJg-5F-Hgi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1At-al-xzQ"/>
+                    <constraint firstItem="IdO-hI-09i" firstAttribute="top" secondItem="gvi-YW-nS5" secondAttribute="bottom" constant="13" id="1lG-Un-Nt1"/>
+                    <constraint firstAttribute="trailing" secondItem="xJg-5F-Hgi" secondAttribute="trailing" id="1vx-wY-2dt"/>
+                    <constraint firstItem="A7e-Yf-5ZA" firstAttribute="top" secondItem="7wP-uv-hJC" secondAttribute="bottom" constant="42" id="2JL-aZ-JZW"/>
+                    <constraint firstAttribute="trailing" secondItem="kPe-Gm-cPK" secondAttribute="trailing" id="3RK-S5-0Yw"/>
+                    <constraint firstAttribute="trailing" secondItem="Zcv-CR-fdR" secondAttribute="trailing" constant="34" id="42d-V0-2ck"/>
+                    <constraint firstItem="kPe-Gm-cPK" firstAttribute="top" secondItem="w5m-IY-LYG" secondAttribute="bottom" constant="27" id="5Gc-2M-9Jy"/>
+                    <constraint firstItem="qsb-LT-Yf6" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="68W-V1-f3E"/>
+                    <constraint firstItem="lk9-gc-zOE" firstAttribute="top" secondItem="7wP-uv-hJC" secondAttribute="bottom" constant="44" id="6Ew-YM-jLQ"/>
+                    <constraint firstItem="QlQ-vW-1Db" firstAttribute="top" secondItem="Zcv-CR-fdR" secondAttribute="bottom" constant="50" id="6fA-SG-VW4"/>
+                    <constraint firstItem="HDX-NP-g4M" firstAttribute="top" secondItem="6uu-fO-b6X" secondAttribute="bottom" constant="26" id="7dv-li-Emi"/>
+                    <constraint firstItem="xJg-5F-Hgi" firstAttribute="top" secondItem="Bv1-7V-0mI" secondAttribute="bottom" constant="24" id="7hw-Mz-GbE"/>
+                    <constraint firstItem="KdN-HC-Pf2" firstAttribute="top" secondItem="A7e-Yf-5ZA" secondAttribute="bottom" constant="12" id="8tM-2o-hY7"/>
+                    <constraint firstItem="jqy-MD-1BK" firstAttribute="leading" secondItem="gRJ-4l-MTu" secondAttribute="trailing" id="8zm-Cq-uNa"/>
+                    <constraint firstItem="pwt-dN-QTF" firstAttribute="top" secondItem="HDX-NP-g4M" secondAttribute="bottom" constant="26" id="9Jk-hS-M4A"/>
+                    <constraint firstItem="2Fv-lA-nFb" firstAttribute="top" secondItem="DNo-dc-LRN" secondAttribute="bottom" id="AT3-Gi-2hs"/>
+                    <constraint firstItem="lk9-gc-zOE" firstAttribute="leading" secondItem="A7e-Yf-5ZA" secondAttribute="trailing" id="AeM-70-QBk"/>
+                    <constraint firstItem="QlQ-vW-1Db" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="C1K-Mi-n49"/>
+                    <constraint firstItem="I7w-lE-DPv" firstAttribute="top" secondItem="R6F-p3-Xjx" secondAttribute="bottom" constant="27" id="DXa-jF-P1L"/>
+                    <constraint firstItem="I7w-lE-DPv" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="DiN-KS-yDP"/>
+                    <constraint firstItem="IdO-hI-09i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DoC-Lu-R1q"/>
+                    <constraint firstItem="oPI-GR-fI0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="35" id="E1Q-qP-aJ1"/>
+                    <constraint firstItem="Bv1-7V-0mI" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="F2U-x2-cNI"/>
+                    <constraint firstItem="SlG-bN-jgU" firstAttribute="top" secondItem="xJg-5F-Hgi" secondAttribute="bottom" constant="28" id="FSg-5F-WHO"/>
+                    <constraint firstItem="yHA-Pc-TfK" firstAttribute="top" secondItem="kPe-Gm-cPK" secondAttribute="bottom" constant="28" id="Fde-La-FxW"/>
+                    <constraint firstAttribute="trailing" secondItem="IdO-hI-09i" secondAttribute="trailing" id="GRN-83-W47"/>
+                    <constraint firstItem="DNo-dc-LRN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="H3d-u0-eXg"/>
+                    <constraint firstItem="A7e-Yf-5ZA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="35" id="IcQ-zv-l0R"/>
+                    <constraint firstItem="7wP-uv-hJC" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="IhF-Rb-rHV"/>
+                    <constraint firstItem="pwt-dN-QTF" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="K7V-nH-Cyp"/>
+                    <constraint firstAttribute="trailing" secondItem="lk9-gc-zOE" secondAttribute="trailing" constant="34" id="KPu-IA-h8f"/>
+                    <constraint firstItem="iqZ-YV-uGf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Kzr-H3-Kc1"/>
+                    <constraint firstItem="gvi-YW-nS5" firstAttribute="top" secondItem="iqZ-YV-uGf" secondAttribute="bottom" constant="13" id="Lc2-CG-bFZ"/>
+                    <constraint firstItem="HU1-7E-jxX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Pz0-Qp-24z"/>
+                    <constraint firstItem="Zcv-CR-fdR" firstAttribute="leading" secondItem="oPI-GR-fI0" secondAttribute="trailing" id="QfP-LT-bgd"/>
+                    <constraint firstItem="kPe-Gm-cPK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="RIJ-X9-Vd9"/>
+                    <constraint firstAttribute="trailing" secondItem="gvi-YW-nS5" secondAttribute="trailing" constant="34" id="ROo-B3-ZCo"/>
+                    <constraint firstItem="w5m-IY-LYG" firstAttribute="top" secondItem="SlG-bN-jgU" secondAttribute="bottom" constant="2" id="RS8-ln-V06"/>
+                    <constraint firstAttribute="trailing" secondItem="jqy-MD-1BK" secondAttribute="trailing" constant="34" id="Rzz-Qv-kbx"/>
+                    <constraint firstItem="Zcv-CR-fdR" firstAttribute="top" secondItem="IdO-hI-09i" secondAttribute="bottom" constant="11" id="VL4-eX-4O1"/>
+                    <constraint firstItem="yHA-Pc-TfK" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="WPX-if-utz"/>
+                    <constraint firstItem="IdO-hI-09i" firstAttribute="top" secondItem="vTy-Ov-ves" secondAttribute="bottom" constant="12" id="XxE-Ds-5Y0"/>
+                    <constraint firstItem="7wP-uv-hJC" firstAttribute="top" secondItem="alo-Iz-lfx" secondAttribute="bottom" id="Y2e-Bs-XPu"/>
+                    <constraint firstItem="HDX-NP-g4M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YGq-LO-vnC"/>
+                    <constraint firstItem="vTy-Ov-ves" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="35" id="Z20-Se-SXM"/>
+                    <constraint firstItem="KdN-HC-Pf2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZUl-N1-Ufo"/>
+                    <constraint firstItem="6uu-fO-b6X" firstAttribute="top" secondItem="I7w-lE-DPv" secondAttribute="bottom" constant="4" id="aaq-Fx-Aju"/>
+                    <constraint firstItem="HU1-7E-jxX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="b5n-97-KQL"/>
+                    <constraint firstItem="alo-Iz-lfx" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="bLN-ES-rUf"/>
+                    <constraint firstAttribute="trailing" secondItem="R6F-p3-Xjx" secondAttribute="trailing" id="cGU-wT-zds"/>
+                    <constraint firstItem="R6F-p3-Xjx" firstAttribute="top" secondItem="TIf-L5-G6P" secondAttribute="bottom" constant="19" id="drW-z9-Nj0"/>
+                    <constraint firstItem="oPI-GR-fI0" firstAttribute="top" secondItem="IdO-hI-09i" secondAttribute="bottom" constant="11" id="eqI-VB-vpD"/>
+                    <constraint firstItem="vTy-Ov-ves" firstAttribute="top" secondItem="iqZ-YV-uGf" secondAttribute="bottom" constant="11" id="fic-7k-MUC"/>
+                    <constraint firstAttribute="bottom" secondItem="HU1-7E-jxX" secondAttribute="bottom" id="hUq-8n-30I"/>
+                    <constraint firstItem="DNo-dc-LRN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="iIo-Ai-VBY"/>
+                    <constraint firstItem="iqZ-YV-uGf" firstAttribute="top" secondItem="jqy-MD-1BK" secondAttribute="bottom" constant="13" id="iYT-IP-vMo"/>
+                    <constraint firstItem="SlG-bN-jgU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="kBa-Wc-UWA"/>
+                    <constraint firstAttribute="trailing" secondItem="HDX-NP-g4M" secondAttribute="trailing" id="kK6-ph-dgk"/>
+                    <constraint firstItem="jqy-MD-1BK" firstAttribute="top" secondItem="KdN-HC-Pf2" secondAttribute="bottom" constant="13" id="lEy-1a-Lwe"/>
+                    <constraint firstItem="iqZ-YV-uGf" firstAttribute="top" secondItem="gRJ-4l-MTu" secondAttribute="bottom" constant="12" id="mEU-Do-xI1"/>
+                    <constraint firstItem="TIf-L5-G6P" firstAttribute="top" secondItem="QlQ-vW-1Db" secondAttribute="bottom" constant="4" id="nKP-gs-R1q"/>
+                    <constraint firstItem="qsb-LT-Yf6" firstAttribute="top" secondItem="yHA-Pc-TfK" secondAttribute="bottom" constant="3" id="nc2-6I-KRJ"/>
+                    <constraint firstItem="w5m-IY-LYG" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="noJ-24-O5K"/>
+                    <constraint firstItem="gvi-YW-nS5" firstAttribute="leading" secondItem="vTy-Ov-ves" secondAttribute="trailing" id="pVz-Qe-9j1"/>
+                    <constraint firstItem="R6F-p3-Xjx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="paE-KI-uab"/>
+                    <constraint firstItem="alo-Iz-lfx" firstAttribute="top" secondItem="2Fv-lA-nFb" secondAttribute="bottom" constant="19" id="prA-EQ-DoZ"/>
+                    <constraint firstAttribute="trailing" secondItem="iqZ-YV-uGf" secondAttribute="trailing" id="ptR-pA-Zjc"/>
+                    <constraint firstItem="6uu-fO-b6X" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="q9Z-Vb-qtp"/>
+                    <constraint firstItem="TIf-L5-G6P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="syc-qd-dwv"/>
+                    <constraint firstAttribute="trailing" secondItem="HU1-7E-jxX" secondAttribute="trailing" id="t2c-E4-d83"/>
+                    <constraint firstItem="TIf-L5-G6P" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="tcG-Xe-3HN"/>
+                    <constraint firstItem="gRJ-4l-MTu" firstAttribute="top" secondItem="KdN-HC-Pf2" secondAttribute="bottom" constant="11" id="vf2-kd-Qg9"/>
+                    <constraint firstItem="2Fv-lA-nFb" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="vfW-2v-VUG"/>
+                    <constraint firstAttribute="trailing" secondItem="KdN-HC-Pf2" secondAttribute="trailing" id="xlt-Vw-1tk"/>
+                    <constraint firstItem="gRJ-4l-MTu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="35" id="ylj-gT-d3K"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="tcG-Xe-3HN"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="distributorLabel" destination="qsb-LT-Yf6" id="Gpk-Kf-Rni"/>
+                <outlet property="infoBackgroundView" destination="HU1-7E-jxX" id="T14-1B-ghc"/>
+                <outlet property="orderDateLabel" destination="7wP-uv-hJC" id="YjT-bc-rsp"/>
+                <outlet property="orderNumberLabel" destination="2Fv-lA-nFb" id="jNB-hC-zr5"/>
+                <outlet property="orderTotalLabel" destination="Zcv-CR-fdR" id="vlK-vE-IRZ"/>
+                <outlet property="paymentLabel" destination="Bv1-7V-0mI" id="hdc-ce-WvJ"/>
+                <outlet property="promoLabel" destination="w5m-IY-LYG" id="SyY-mt-nNP"/>
+                <outlet property="shippingAddressLabel" destination="TIf-L5-G6P" id="DYD-WB-WQe"/>
+                <outlet property="shippingHandlingLabel" destination="jqy-MD-1BK" id="H6I-sx-Dcq"/>
+                <outlet property="shippingMethodLabel" destination="6uu-fO-b6X" id="PkF-G1-PdD"/>
+                <outlet property="subtotalLabel" destination="lk9-gc-zOE" id="DrY-Bc-ex7"/>
+                <outlet property="taxLabel" destination="gvi-YW-nS5" id="PbI-Ih-nJx"/>
+            </connections>
+            <point key="canvasLocation" x="215" y="857.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="divider" width="183" height="1"/>
+    </resources>
+</document>

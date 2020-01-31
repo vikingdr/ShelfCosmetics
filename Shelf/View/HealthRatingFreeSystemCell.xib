@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HealthRatingFreeSystemCell" customModule="Shelf" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="370"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8n1-NJ-BEp">
+                    <rect key="frame" x="158" y="121" width="60" height="1"/>
+                    <color key="backgroundColor" red="1" green="0.72941176470588232" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="QPt-V3-wrs"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8b7-wG-s9P" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                    <rect key="frame" x="39" y="47" width="297" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="qrh-Xj-eAN"/>
+                    </constraints>
+                    <string key="text">How does the Free 
+System work?</string>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FD5-zP-rvl" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                    <rect key="frame" x="59" y="145" width="257" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="250" constant="54" id="xOx-Tz-z6x"/>
+                    </constraints>
+                    <string key="text">Most nail polish unfortunately contains chemicals that are harmful to you 
+and the environment. </string>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                            <real key="value" value="0.29999999999999999"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyE-on-z17" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                    <rect key="frame" x="59" y="221" width="257" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="250" constant="90" id="7Kr-uR-Qj3"/>
+                    </constraints>
+                    <string key="text">The Free system indicates how many of the commonly used chemicals are absent from the nail polish. The higher the number, the safer the polish is for you!</string>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                            <real key="value" value="0.29999999999999999"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8b7-wG-s9P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="47" id="2S8-WV-qx7"/>
+                <constraint firstItem="FD5-zP-rvl" firstAttribute="top" secondItem="8n1-NJ-BEp" secondAttribute="bottom" constant="23" id="4yx-ck-O1h"/>
+                <constraint firstItem="FD5-zP-rvl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="59" id="B4D-qw-ILu"/>
+                <constraint firstAttribute="trailing" secondItem="8n1-NJ-BEp" secondAttribute="trailing" constant="157" id="Bgc-7u-JKq"/>
+                <constraint firstItem="8b7-wG-s9P" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="39" id="DNI-HD-W9t"/>
+                <constraint firstAttribute="trailing" secondItem="FD5-zP-rvl" secondAttribute="trailing" constant="59" id="GQr-lv-rd6"/>
+                <constraint firstAttribute="bottom" secondItem="8n1-NJ-BEp" secondAttribute="bottom" id="NMe-eK-DKc"/>
+                <constraint firstAttribute="bottom" secondItem="fyE-on-z17" secondAttribute="bottom" constant="59" id="P4p-zV-z3y"/>
+                <constraint firstItem="fyE-on-z17" firstAttribute="top" secondItem="FD5-zP-rvl" secondAttribute="bottom" constant="22" id="SBc-ia-Mhd"/>
+                <constraint firstItem="8n1-NJ-BEp" firstAttribute="top" secondItem="8b7-wG-s9P" secondAttribute="bottom" constant="24" id="Yb2-8y-UZK"/>
+                <constraint firstAttribute="trailing" secondItem="8b7-wG-s9P" secondAttribute="trailing" constant="39" id="Z94-XM-tde"/>
+                <constraint firstItem="8n1-NJ-BEp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="158" id="ZM6-by-xP4"/>
+                <constraint firstItem="8b7-wG-s9P" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="au7-rE-d8m"/>
+                <constraint firstItem="fyE-on-z17" firstAttribute="width" secondItem="FD5-zP-rvl" secondAttribute="width" id="iHw-mb-Kwr"/>
+                <constraint firstItem="fyE-on-z17" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="59" id="mPX-8f-5Xy"/>
+                <constraint firstAttribute="trailing" secondItem="fyE-on-z17" secondAttribute="trailing" constant="59" id="wv0-rs-dfF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="NMe-eK-DKc"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="445.5" y="530"/>
+        </view>
+    </objects>
+</document>

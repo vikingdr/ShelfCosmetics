@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="124" id="KGk-i7-Jjw" customClass="ShippingMethodCell" customModule="Shelf" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDe-9y-wmb">
+                        <rect key="frame" x="29" y="21" width="316" height="103"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ax-cA-NxW">
+                                <rect key="frame" x="0.0" y="0.0" width="316" height="103"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EG9-XV-00H" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                                <rect key="frame" x="21" y="18" width="227" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="EF7-7Y-Rs2"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="STANDARD GROUND: $5.95">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="12" name="Avenir-Black"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                        <real key="value" value="1.1100000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gY7-Ao-1jf" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                                <rect key="frame" x="21" y="38" width="227" height="30"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="East coast: 1-4 business days West coast: 1-6 business days">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="10.5" name="Avenir-Black"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                        <real key="value" value="0.44"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="644-hY-MBn" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                                <rect key="frame" x="21" y="71" width="227" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="j7x-Yw-gew"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Delivery: Monday - Saturday">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="10.5" name="Avenir-Black"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                        <real key="value" value="0.44"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkUnselectedButton" translatesAutoresizingMaskIntoConstraints="NO" id="mgz-LT-cDi">
+                                <rect key="frame" x="251" y="32" width="38" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="38" id="ciB-78-dMC"/>
+                                    <constraint firstAttribute="height" constant="39" id="zGE-by-b4o"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="644-hY-MBn" secondAttribute="bottom" constant="17" id="08x-NW-nOc"/>
+                            <constraint firstItem="mgz-LT-cDi" firstAttribute="leading" secondItem="EG9-XV-00H" secondAttribute="trailing" constant="3" id="IP0-Fe-BoU"/>
+                            <constraint firstItem="644-hY-MBn" firstAttribute="top" secondItem="gY7-Ao-1jf" secondAttribute="bottom" constant="3" id="Kcq-0J-6vw"/>
+                            <constraint firstItem="5ax-cA-NxW" firstAttribute="leading" secondItem="cDe-9y-wmb" secondAttribute="leading" id="UFu-Py-LLb"/>
+                            <constraint firstAttribute="height" constant="103" id="XVA-cJ-f6e"/>
+                            <constraint firstItem="5ax-cA-NxW" firstAttribute="top" secondItem="cDe-9y-wmb" secondAttribute="top" id="ZY7-Yh-X5n"/>
+                            <constraint firstItem="mgz-LT-cDi" firstAttribute="leading" secondItem="644-hY-MBn" secondAttribute="trailing" constant="3" id="b8P-0z-p9g"/>
+                            <constraint firstItem="EG9-XV-00H" firstAttribute="leading" secondItem="cDe-9y-wmb" secondAttribute="leading" constant="21" id="bQx-V7-hsb"/>
+                            <constraint firstItem="gY7-Ao-1jf" firstAttribute="leading" secondItem="cDe-9y-wmb" secondAttribute="leading" constant="21" id="bwz-w1-myk"/>
+                            <constraint firstAttribute="bottom" secondItem="5ax-cA-NxW" secondAttribute="bottom" id="cjn-2e-4e9"/>
+                            <constraint firstItem="mgz-LT-cDi" firstAttribute="leading" secondItem="gY7-Ao-1jf" secondAttribute="trailing" constant="3" id="dCq-ZD-1mr"/>
+                            <constraint firstAttribute="trailing" secondItem="5ax-cA-NxW" secondAttribute="trailing" id="jlJ-E4-WPn"/>
+                            <constraint firstItem="EG9-XV-00H" firstAttribute="top" secondItem="cDe-9y-wmb" secondAttribute="top" constant="18" id="neq-GH-exL"/>
+                            <constraint firstItem="mgz-LT-cDi" firstAttribute="centerY" secondItem="cDe-9y-wmb" secondAttribute="centerY" id="p4e-nK-o8s"/>
+                            <constraint firstItem="gY7-Ao-1jf" firstAttribute="top" secondItem="EG9-XV-00H" secondAttribute="bottom" constant="4" id="sX5-Ui-rsL"/>
+                            <constraint firstAttribute="trailing" secondItem="mgz-LT-cDi" secondAttribute="trailing" constant="27" id="vux-GP-1Gu"/>
+                            <constraint firstItem="644-hY-MBn" firstAttribute="leading" secondItem="cDe-9y-wmb" secondAttribute="leading" constant="21" id="zRC-kC-9dE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="cDe-9y-wmb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="29" id="BUw-1d-cqL"/>
+                    <constraint firstAttribute="bottom" secondItem="cDe-9y-wmb" secondAttribute="bottom" id="POq-Qd-Sfi"/>
+                    <constraint firstAttribute="trailing" secondItem="cDe-9y-wmb" secondAttribute="trailing" constant="30" id="dyO-zg-lFr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="5ax-cA-NxW" id="7Ts-wP-Wu7"/>
+                <outlet property="checkImageView" destination="mgz-LT-cDi" id="gRE-lc-eff"/>
+                <outlet property="deliveryLabel" destination="644-hY-MBn" id="G3q-Pg-5pK"/>
+                <outlet property="shippingDetailsLabel" destination="gY7-Ao-1jf" id="bB5-3E-wiX"/>
+                <outlet property="shippingMethodLabel" destination="EG9-XV-00H" id="2FH-NL-LWa"/>
+            </connections>
+            <point key="canvasLocation" x="214.5" y="476.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkUnselectedButton" width="40" height="41"/>
+    </resources>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="i7L-Su-ScF" customClass="LoadingMoreCell" customModule="Shelf" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i7L-Su-ScF" id="HjO-0D-RT1">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="68.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="LK2-Yp-LuN">
+                        <rect key="frame" x="177" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="lfG-GD-0Lw"/>
+                            <constraint firstAttribute="height" constant="20" id="vCA-X1-WBS"/>
+                        </constraints>
+                    </activityIndicatorView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading more, please wait..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W09-gh-jwx">
+                        <rect key="frame" x="107" y="41" width="161" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="DU0-YJ-wQW"/>
+                            <constraint firstAttribute="width" constant="161" id="qCN-vX-cMN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="12"/>
+                        <color key="textColor" red="0.60392159219999997" green="0.60784316059999999" blue="0.66274511810000003" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="W09-gh-jwx" firstAttribute="centerX" secondItem="HjO-0D-RT1" secondAttribute="centerX" id="TH4-dx-z71"/>
+                    <constraint firstItem="LK2-Yp-LuN" firstAttribute="centerX" secondItem="HjO-0D-RT1" secondAttribute="centerX" id="faM-1M-Ly9"/>
+                    <constraint firstItem="W09-gh-jwx" firstAttribute="top" secondItem="LK2-Yp-LuN" secondAttribute="bottom" constant="9" id="i5q-ba-siv"/>
+                    <constraint firstItem="LK2-Yp-LuN" firstAttribute="top" secondItem="HjO-0D-RT1" secondAttribute="top" constant="12" id="tjE-fF-njY"/>
+                    <constraint firstAttribute="bottom" secondItem="W09-gh-jwx" secondAttribute="bottom" constant="12" id="vfk-9w-Bvh"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="vfk-9w-Bvh"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+        </tableViewCell>
+    </objects>
+</document>

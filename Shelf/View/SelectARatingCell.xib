@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="SelectARatingCell" customModule="Shelf" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaM-dG-DEY">
+                        <rect key="frame" x="16" y="36" width="343" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="0bM-x0-4ht"/>
+                            <constraint firstAttribute="width" constant="343" id="7TL-IC-l6F"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="SELECT A RATING">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="11" name="Avenir-Roman"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4.6799999999999997" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lineSeparator" translatesAutoresizingMaskIntoConstraints="NO" id="mDy-ZA-eja">
+                        <rect key="frame" x="41" y="134" width="293" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="VdC-dY-iTm"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XwJ-pw-ryi" customClass="RatingView" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="78" y="63" width="219" height="32"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="219" id="Y4f-0X-608"/>
+                            <constraint firstAttribute="height" constant="32" id="sM9-bs-zPX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="mDy-ZA-eja" secondAttribute="trailing" constant="41" id="8CW-GI-wpz"/>
+                    <constraint firstItem="VaM-dG-DEY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="AmK-Bw-OsS"/>
+                    <constraint firstItem="XwJ-pw-ryi" firstAttribute="top" secondItem="VaM-dG-DEY" secondAttribute="bottom" constant="12" id="El3-lY-tao"/>
+                    <constraint firstItem="XwJ-pw-ryi" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Gc2-2E-13c"/>
+                    <constraint firstItem="VaM-dG-DEY" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="M31-hf-TQE"/>
+                    <constraint firstAttribute="bottom" secondItem="mDy-ZA-eja" secondAttribute="bottom" constant="1" id="ZAK-YH-k0p"/>
+                    <constraint firstItem="mDy-ZA-eja" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="41" id="fMM-C2-M8W"/>
+                    <constraint firstItem="VaM-dG-DEY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="36" id="zqs-Ze-v9t"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="AmK-Bw-OsS"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="SelectARating" destination="VaM-dG-DEY" id="q3F-GH-cHn"/>
+                <outlet property="rating" destination="XwJ-pw-ryi" id="bVh-ff-Yfz"/>
+            </connections>
+            <point key="canvasLocation" x="262.5" y="358"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="lineSeparator" width="294" height="1"/>
+    </resources>
+</document>

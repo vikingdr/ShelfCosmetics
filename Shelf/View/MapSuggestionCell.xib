@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="MapSuggestionCell" customModule="Shelf" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=".1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnw-HA-xwI">
+                        <rect key="frame" x="248" y="15" width="65" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="Egq-MN-PFX"/>
+                            <constraint firstAttribute="width" constant="65" id="baF-O1-4EH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
+                        <color key="textColor" red="0.94117647058823528" green="0.46274509803921571" blue="0.51764705882352935" alpha="0.72999999999999998" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yEf-4f-fje">
+                        <rect key="frame" x="21" y="49" width="304" height="1"/>
+                        <color key="backgroundColor" red="0.31764705882352939" green="0.32156862745098036" blue="0.43137254901960786" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="zax-AG-sng"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFm-iO-BgO">
+                        <rect key="frame" x="317" y="15" width="21" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="21" id="A9W-tl-jZ5"/>
+                            <constraint firstAttribute="height" constant="19" id="mHb-Gf-UYd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
+                        <color key="textColor" red="0.94117647058823528" green="0.46274509803921571" blue="0.51764705882352935" alpha="0.72999999999999998" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RedPinIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Er9-fV-Kq8">
+                        <rect key="frame" x="29" y="13" width="14" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="YNt-J4-pxN"/>
+                            <constraint firstAttribute="width" constant="14" id="wXb-8W-5Ix"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="locateMeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="WtZ-gQ-7dT">
+                        <rect key="frame" x="302" y="19" width="11" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="j25-hB-vQS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nail salon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRZ-ht-zbf">
+                        <rect key="frame" x="58" y="15" width="187" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="HMP-Zn-qNq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
+                        <color key="textColor" red="0.32156862745098036" green="0.32549019607843138" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bFm-iO-BgO" firstAttribute="leading" secondItem="vnw-HA-xwI" secondAttribute="trailing" constant="4" id="58r-tZ-kby"/>
+                    <constraint firstItem="Er9-fV-Kq8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="7AD-2x-ob0"/>
+                    <constraint firstItem="bFm-iO-BgO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="9NC-WJ-rDM"/>
+                    <constraint firstAttribute="trailing" secondItem="yEf-4f-fje" secondAttribute="trailing" constant="21" id="H8c-od-Dno"/>
+                    <constraint firstItem="WtZ-gQ-7dT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ibh-pF-Zdm"/>
+                    <constraint firstAttribute="bottom" secondItem="yEf-4f-fje" secondAttribute="bottom" id="L8Q-bj-Ez8"/>
+                    <constraint firstAttribute="trailing" secondItem="vnw-HA-xwI" secondAttribute="trailing" constant="33" id="QAh-zh-8iv"/>
+                    <constraint firstItem="dRZ-ht-zbf" firstAttribute="leading" secondItem="Er9-fV-Kq8" secondAttribute="trailing" constant="15" id="QFp-lA-LZP"/>
+                    <constraint firstItem="bFm-iO-BgO" firstAttribute="leading" secondItem="WtZ-gQ-7dT" secondAttribute="trailing" constant="5" id="ScW-Zs-83c"/>
+                    <constraint firstItem="dRZ-ht-zbf" firstAttribute="top" secondItem="vnw-HA-xwI" secondAttribute="bottom" constant="-19" id="Tcs-OU-HPN"/>
+                    <constraint firstItem="vnw-HA-xwI" firstAttribute="leading" secondItem="dRZ-ht-zbf" secondAttribute="trailing" constant="3" id="abM-Jt-VVS"/>
+                    <constraint firstItem="vnw-HA-xwI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="ee6-8h-XeQ"/>
+                    <constraint firstItem="Er9-fV-Kq8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="29" id="fG5-rx-P42"/>
+                    <constraint firstItem="yEf-4f-fje" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="fzF-dc-MX9"/>
+                    <constraint firstItem="dRZ-ht-zbf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="l3n-C9-9fA"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Tcs-OU-HPN"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="distance" destination="vnw-HA-xwI" id="ADH-pI-UIH"/>
+                <outlet property="milesLabel" destination="bFm-iO-BgO" id="MJ9-qd-xwW"/>
+                <outlet property="myLocation" destination="WtZ-gQ-7dT" id="hGW-xP-cqT"/>
+                <outlet property="placeName" destination="dRZ-ht-zbf" id="QnM-3C-hiR"/>
+            </connections>
+            <point key="canvasLocation" x="292" y="435"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="RedPinIcon" width="16" height="28"/>
+        <image name="locateMeIcon" width="11" height="12"/>
+    </resources>
+</document>

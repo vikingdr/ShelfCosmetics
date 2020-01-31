@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="124" id="yr4-vC-VaF" customClass="SettingsCell" customModule="Shelf" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yr4-vC-VaF" id="UAS-Na-CfZ">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="123.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhA-aP-H57" customClass="ShelfButton" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="48" y="16" width="280" height="98"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="98" id="Pkc-qO-kgd"/>
+                            <constraint firstAttribute="width" constant="280" id="g8J-72-Lnv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orderHistoryIcon" translatesAutoresizingMaskIntoConstraints="NO" id="oP9-S6-VrO">
+                        <rect key="frame" x="157" y="24" width="61" height="61"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="61" id="AX1-gg-kJ5"/>
+                            <constraint firstAttribute="height" constant="61" id="Vax-5h-Qge"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P01-RW-0fY" customClass="ShelfLabel" customModule="Shelf" customModuleProvider="target">
+                        <rect key="frame" x="48" y="77" width="280" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Bef-5G-cYd"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Order History">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="16" name="Avenir-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                <real key="value" value="0.48999999999999999"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="P01-RW-0fY" firstAttribute="top" secondItem="oP9-S6-VrO" secondAttribute="bottom" constant="-8" id="9kO-dF-XUY"/>
+                    <constraint firstItem="P01-RW-0fY" firstAttribute="trailing" secondItem="YhA-aP-H57" secondAttribute="trailing" id="L10-oU-9Is"/>
+                    <constraint firstItem="P01-RW-0fY" firstAttribute="leading" secondItem="YhA-aP-H57" secondAttribute="leading" id="MVm-dg-Zl6"/>
+                    <constraint firstItem="oP9-S6-VrO" firstAttribute="centerX" secondItem="UAS-Na-CfZ" secondAttribute="centerX" id="VgA-Ih-HZQ"/>
+                    <constraint firstAttribute="bottom" secondItem="YhA-aP-H57" secondAttribute="bottom" constant="10" id="X5t-4o-hGW"/>
+                    <constraint firstItem="YhA-aP-H57" firstAttribute="bottom" secondItem="P01-RW-0fY" secondAttribute="bottom" constant="15" id="bqN-sI-aaf"/>
+                    <constraint firstItem="YhA-aP-H57" firstAttribute="centerX" secondItem="UAS-Na-CfZ" secondAttribute="centerX" id="kip-zV-dnQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="settingsButton" destination="YhA-aP-H57" id="fy2-xj-Jp8"/>
+                <outlet property="settingsIcon" destination="oP9-S6-VrO" id="KG8-Hr-yE2"/>
+                <outlet property="settingsLabel" destination="P01-RW-0fY" id="OSv-t3-QtV"/>
+            </connections>
+            <point key="canvasLocation" x="534.5" y="373.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="orderHistoryIcon" width="28" height="36"/>
+    </resources>
+</document>
