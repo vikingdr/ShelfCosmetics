@@ -2,7 +2,7 @@
 //  CapturedImageVC.swift
 //  Shelf
 //
-//  Created by Nathan Konrad on 11/12/15.
+//  Created by Matthew James on 11/12/15.
 //  Copyright © 2015 Shelf. All rights reserved.
 //
 // NOTE: DEPRECATED on 10/10/16

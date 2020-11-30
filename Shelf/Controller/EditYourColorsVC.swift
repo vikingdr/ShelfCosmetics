@@ -2,7 +2,7 @@
 //  EditYourColorsVC.swift
 //  Shelf
 //
-//  Created by Nathan Konrad on 11/6/15.
+//  Created by Matthew James on 11/6/15.
 //  Copyright © 2015 Shelf. All rights reserved.
 //
 

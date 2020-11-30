@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Shelf
 //
-//  Created by Nathan Konrad on 29/04/15.
+//  Created by Matthew James on 29/04/15.
 //  Copyright (c) 2015 Shelf. All rights reserved.
 //
 
@@ -24,7 +24,7 @@ let kMessage = "message"
 let kConversionKey = "f83275c3e502f6b9ed4104a6b3610df1"
 let kAdvertiserId = "192811"
 
-// Nathan Konrad Shelf Dev
+// Matthew James Shelf Dev
 let PARSE_APPLICATION_ID = "VI83dXAsZZ9rrzgtSooRZKneJzEw5DWGzADudQLQ"
 let PARSE_CLIENT_KEY = "J0YzH19ka9lwQ53WE0yJDCqrDCgrlYjQeoTcjHu8"
 

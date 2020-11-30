@@ -2,7 +2,7 @@
 //  LocationSelectedCell.swift
 //  Shelf
 //
-//  Created by Nathan Konrad on 9/23/16.
+//  Created by Matthew James on 9/23/16.
 //  Copyright © 2016 Shelf. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  SFollow.swift
 //  Shelf
 //
-//  Created by Nathan Konrad on 20.07.15.
+//  Created by Matthew James on 20.07.15.
 //  Copyright (c) 2015 Shelf. All rights reserved.
 //
 

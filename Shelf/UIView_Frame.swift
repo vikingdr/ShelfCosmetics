@@ -2,7 +2,7 @@
 //  UIView_Frame.swift
 //  qwix
 //
-//  Created by Nathan Konrad on 05.02.15.
+//  Created by Matthew James on 05.02.15.
 //  Copyright (c) 2015 Shelf. All rights reserved.
 //
 

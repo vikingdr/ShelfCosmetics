@@ -2,7 +2,7 @@
 //  Bridging-Header.h
 //  Shelf
 //
-//  Created by Nathan Konrad on 03/05/15.
+//  Created by Matthew James on 03/05/15.
 //  Copyright (c) 2015 Shelf. All rights reserved.
 //
 

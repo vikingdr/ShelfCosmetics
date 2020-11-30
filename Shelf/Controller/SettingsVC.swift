@@ -2,7 +2,7 @@
 //  SettingsVC.swift
 //  Shelf
 //
-//  Created by Nathan Konrad on 06/06/15.
+//  Created by Matthew James on 06/06/15.
 //  Copyright (c) 2015 Shelf. All rights reserved.
 //
 

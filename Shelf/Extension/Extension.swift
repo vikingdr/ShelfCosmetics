@@ -2,7 +2,7 @@
 //  StringExtension.swift
 //  Shelf
 //
-//  Created by Nathan Konrad on 8/30/16.
+//  Created by Matthew James on 8/30/16.
 //  Copyright © 2016 Shelf. All rights reserved.
 //
 

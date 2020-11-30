@@ -2,7 +2,7 @@
 //  File.swift
 //  Pingo
 //
-//  Created by Nathan Konrad on 11/11/14.
+//  Created by Matthew James on 11/11/14.
 //  Copyright (c) 2015 Shelf. All rights reserved.
 //
 

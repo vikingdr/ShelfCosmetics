@@ -2,8 +2,8 @@
 //  Colors.swift
 //  LoginRegister
 //
-//  Created by Nathan Konrad on 5/19/15.
-//  Copyright (c) 2015 Nathan Konrad. All rights reserved.
+//  Created by Matthew James on 5/19/15.
+//  Copyright (c) 2015 Matthew James. All rights reserved.
 //
 
 import Foundation

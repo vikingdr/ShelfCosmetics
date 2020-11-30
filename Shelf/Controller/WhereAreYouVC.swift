@@ -2,7 +2,7 @@
 //  WhereAreYouVC.swift
 //  Shelf
 //
-//  Created by Nathan Konrad on 9/19/16.
+//  Created by Matthew James on 9/19/16.
 //  Copyright © 2016 Shelf. All rights reserved.
 //
 
